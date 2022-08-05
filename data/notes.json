@@ -2,112 +2,38 @@
   "notes": [
     {
       "id": "0",
-      "name": "Spindle",
-      "species": "bear",
-      "diet": "omnivore",
-      "personalityTraits": [
-        "hungry",
-        "zany",
-        "loving"
-      ]
+      "title": "First Note",
+      "text": "The quick brown fox jumped over the lazy dog."
     },
     {
       "id": "1",
-      "name": "Terry",
-      "species": "gorilla",
-      "diet": "folivore",
-      "personalityTraits": [
-        "anxious",
-        "goofy"
-      ]
+      "title": "2nd Note",
+      "text": "The quick brown fox jumped over the lazy dog."
     },
     {
       "id": "2",
-      "name": "Erica",
-      "species": "gorilla",
-      "diet": "folivore",
-      "personalityTraits": [
-        "quirky",
-        "rash"
-      ]
+      "title": "3rd Note",
+      "text": "The quick brown fox jumped over the lazy dog."
     },
     {
       "id": "3",
-      "name": "Noel",
-      "species": "bear",
-      "diet": "omnivore",
-      "personalityTraits": [
-        "impish",
-        "sassy",
-        "brave"
-      ]
+      "title": "4th Note",
+      "text": "The quick brown fox jumped over the lazy dog."
     },
     {
       "id": "4",
-      "name": "Coco",
-      "species": "penguin",
-      "diet": "piscivore",
-      "personalityTraits": [
-        "loving",
-        "goofy"
-      ]
+      "title": "5th Note",
+      "text": "The quick brown fox jumped over the lazy dog."
     },
     {
-      "id": "5",
-      "name": "Marcy",
-      "species": "ostrich",
-      "diet": "omnivore",
-      "personalityTraits": [
-        "hungry",
-        "goofy"
-      ]
+      "title": "Test 6",
+      "text": "Awesome text",
+      "id": "5"
     },
     {
-      "id": "6",
-      "name": "Bodhi",
-      "species": "Doggo",
-      "diet": "omnivore",
-      "personalityTraits": [
-        "zany"
-      ]
-    },
-    {
-      "id": "7",
-      "name": "Cassie",
-      "species": "Doggo",
-      "diet": "omnivore",
-      "personalityTraits": [
-        "hungry",
-        "zany",
-        "goofy"
-      ]
-    },
-    {
-      "id": "8",
-      "name": "Roxy",
-      "species": "Quokka",
-      "diet": "herbivore",
-      "personalityTraits": [
-        "loving"
-      ]
-    },
-    {
-      "id": "9",
-      "name": "Tamara",
-      "species": "Tiger",
-      "diet": "carnivore",
-      "personalityTraits": [
-        "hungry"
-      ]
-    },
-    {
-      "name": "Larry",
-      "species": "Lemur",
-      "diet": "omnivore",
-      "personalityTraits": [
-        "hungry"
-      ],
-      "id": "10"
+      "title": "Test 7",
+      "text": "Yet more awesome text!!!\n",
+      "id": "6"
     }
   ]
 }

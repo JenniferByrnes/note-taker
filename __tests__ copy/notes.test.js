@@ -11,32 +11,28 @@ jest.mock('fs');
 
 test("creates an note object", () => {
   const note = createNewNote(
-    { name: "Darlene", id: "jhgdja3ng2" },
+    { title: "Test Note", text: "jhgdja3ng2" },
     notes
   );
 
-  expect(note.name).toBe("Darlene");
-  expect(note.id).toBe("jhgdja3ng2");
+  expect(note.title).toBe("Test Note");
+  expect(note.text).toBe("jhgdja3ng2");
 });
 
 test("filters by query", () => {
   const startingNotes = [
     {
       id: "3",
-      name: "Erica",
-      species: "gorilla",
-      diet: "omnivore",
-      personalityTraits: ["quirky", "rash"],
+      title: "Text Note #1",
+      text: "tremendously interesting note text"
     },
     {
       id: "4",
-      name: "Noel",
-      species: "bear",
-      diet: "carnivore",
-      personalityTraits: ["impish", "sassy", "brave"],
+      title: "Text Note #2",
+      text: "yet more tremendously interesting note text"
     }
   ];
-  const updateNotes = filterByQuery({ species: "gorilla" }, startingNotes);
+  const updateNotes = filterByQuery({ text: "tremendously interesting note text" }, startingNotes);
 
   expect(updateNotes.length).toEqual(1);
 });
@@ -45,44 +41,17 @@ test("finds by id", () => {
   const startingNotes = [
     {
       id: "3",
-      name: "Erica",
-      species: "gorilla",
-      diet: "omnivore",
-      personalityTraits: ["quirky", "rash"],
+      title: "Text Note #1",
+      text: "tremendously interesting note text"
     },
     {
       id: "4",
-      name: "Noel",
-      species: "bear",
-      diet: "carnivore",
-      personalityTraits: ["impish", "sassy", "brave"],
-    },
+      title: "Text Note #2",
+      text: "yet more tremendously interesting note text"
+    }
   ];
 
   const result = findById("3", startingNotes);
 
-  expect(result.name).toBe("Erica");
-});
-
-test("validates personality traits", () => {
-  const note = {
-    id: "3",
-    name: "Erica",
-    species: "gorilla",
-    diet: "omnivore",
-    personalityTraits: ["quirky", "rash"],
-  };
-
-  const invalidNote = {
-    id: "3",
-    name: "Erica",
-    species: "gorilla",
-    diet: "omnivore",
-  };
-
-  const result = validateNote(note);
-  const result2 = validateNote(invalidNote);
-
-  expect(result).toBe(true);
-  expect(result2).toBe(false);
+  expect(result.name).toBe("Text Note #1");
 });
