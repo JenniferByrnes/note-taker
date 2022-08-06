@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const crypto = require('crypto');
 
 const { filterByQuery, findById, createNewNote, validateNote } = require('../../lib/notes');
 const { notes } = require('../../data/notes');
@@ -22,7 +23,8 @@ router.get('/notes/:id', (req, res) => {
 
 router.post('/notes', (req, res) => {
   // set id based on what the next index of the array will be
-  req.body.id = notes.length.toString();
+  //req.body.id = notes.length.toString();
+  req.body.id = crypto.randomUUID();
 
   // if any data in req.body is incorrect, send 400 error back
   if (!validateNote(req.body)) {
