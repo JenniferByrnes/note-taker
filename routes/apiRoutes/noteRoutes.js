@@ -34,5 +34,34 @@ router.post('/notes', (req, res) => {
     res.json(note);
   }
 });
+/*  Sample code of delete
+app.delete('/expressions/:id',(req,res,next)=>{
+  const eleIndex = getIndexById(req.params.id,expressions);
+if(eleIndex!==-1){
+    expressions.splice(eleIndex,1);
+    res.status(204).send(expressions[eleIndex]);
+}
+else{
+    res.status(404).send();
+}
+});
 
+
+
+Assuming your array is just a standard array, the easiest way to remove an item from an array is to use .filter() to return a new copy of the array without the item you want to delete.
+
+app.delete("/api/notes/:id", function(req, res) {
+    console.log("req params", req.params.id)
+    myArray = myArray.filter(({ id }) => id !== req.params.id);
+  });
+Otherwise, if you need to mutate (modify) the existing array, you can use .findIndex() and .splice() instead.
+
+app.delete("/api/notes/:id", function(req, res) {
+    console.log("req params", req.params.id)
+    const itemIndex = myArray.findIndex(({ id }) => id === req.params.id);
+    if (itemIndex >= 0) {
+      myArray.splice(itemIndex, 1);
+    }
+  });
+*/
 module.exports = router;
