@@ -11,7 +11,7 @@ router.get('/notes', (req, res) => {
   }
   res.json(results);
 });
-
+/*  Dont need to query to server for single note
 router.get('/notes/:id', (req, res) => {
   const result = findById(req.params.id, notes);
   if (result) {
@@ -19,6 +19,10 @@ router.get('/notes/:id', (req, res) => {
   } else {
     res.send(404);
   }
+});
+*/
+router.delete('/notes/:id', (req, res) => {
+  const result = findById(req.params.id, notes);
 });
 
 router.post('/notes', (req, res) => {
