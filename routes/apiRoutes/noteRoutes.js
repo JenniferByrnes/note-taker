@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const crypto = require('crypto');
 
-const { createNewNote, deleteNote, renderNotes, validateNote } = require('../../lib/notes');
+const { createNewNote, deleteNote2, renderNotes, validateNote } = require('../../lib/notes');
 const { notes } = require('../../api/notes');
 
 // get all notes from the file
@@ -12,7 +12,7 @@ router.get('/notes', (req, res) => {
 
 router.delete("/notes/:id", function (req, res) {
 
-  return deleteNote(req.params.id, notes);
+  return deleteNote2(req.params.id, notes);
 });
 
 router.post('/notes', (req, res) => {
