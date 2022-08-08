@@ -40,7 +40,7 @@ Fork the repository and do a pull request for your code to be reviewed.
 
 ## Tests
 
-None.
+From the __tests__ directory: npm run test 
 
 ## Questions?
 
