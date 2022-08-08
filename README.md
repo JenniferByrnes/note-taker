@@ -17,18 +17,18 @@ Lets a user type in and delete notes.
 ## Installation
 
 1. Clone the repo
-git clone git@github.com:jenniferbyrnes/note-taker.git
-2. Install NPM packages
-npm install
+ - git clone git@github.com:jenniferbyrnes/note-taker.git
+3. Install NPM packages
+ - npm install
 3. Install NPM Express package
-npm install express
+ - npm install express
 4. Initiate application
-npm start
+ - npm start
 
 
 ## Usage
 
-This project can be used by individuals add and retrieve notes data from a JSON file.
+This project can be used by individuals to add and retrieve notes data from a JSON file.
 
 ## License
 
