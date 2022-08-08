@@ -1,0 +1,39 @@
+{
+  "notes": [
+    {
+      "title": "note able",
+      "text": "new notes",
+      "id": "fd3e096b-e99b-4e9e-a29b-5f9df4045a4e"
+    },
+    {
+      "title": "new day",
+      "text": "hi",
+      "id": "fdff2f68-f3e0-48e7-b3c1-66a538d5b948"
+    },
+    {
+      "title": "yup",
+      "text": "nope",
+      "id": "745642ec-f495-4e8d-8f8a-e45cc93b316a"
+    },
+    {
+      "title": "hello",
+      "text": "goodbye",
+      "id": "369de8b4-25ae-4386-8bcb-386d8d3500a1"
+    },
+    {
+      "title": "yoma",
+      "text": "ma",
+      "id": "64e98b22-c278-42af-83d8-253914624ac7"
+    },
+    {
+      "title": "try me",
+      "text": "again",
+      "id": "214a030d-b4f9-4953-a101-1a94fb4cd2b4"
+    },
+    {
+      "title": "its guess who",
+      "text": "me",
+      "id": "b2660948-f060-4657-9c54-7509ec36145a"
+    }
+  ]
+}
