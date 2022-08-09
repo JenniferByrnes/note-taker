@@ -1,69 +1,29 @@
 {
   "notes": [
     {
-      "title": "note able",
-      "text": "new notes",
-      "id": "fd3e096b-e99b-4e9e-a29b-5f9df4045a4e"
-    },
-    {
-      "title": "new day",
-      "text": "hi",
-      "id": "fdff2f68-f3e0-48e7-b3c1-66a538d5b948"
-    },
-    {
-      "title": "hello",
-      "text": "goodbye",
-      "id": "369de8b4-25ae-4386-8bcb-386d8d3500a1"
-    },
-    {
-      "title": "another day",
-      "text": "another dollar",
-      "id": "8d224c3b-c935-4064-a75c-f37bc62effca"
-    },
-    {
-      "title": "hello again",
-      "text": "hiya",
-      "id": "5efbd775-65eb-4127-9eb3-4213500cae18"
-    },
-    {
-      "title": "yo",
-      "text": "yoyo",
-      "id": "689b13ea-aea1-467d-89ee-10de2eb282b6"
-    },
-    {
-      "title": "note whatevs",
+      "title": "add one",
       "text": "hello",
-      "id": "8bd10482-6506-4d85-88dc-051322ac1718"
+      "id": "1dea5d4d-e1ec-48d5-b880-f9abed562ff1"
     },
     {
-      "title": "hey boo",
-      "text": "fi",
-      "id": "659fc8b1-b622-4807-876d-a6e19bfb79d0"
+      "title": "done?",
+      "text": "please oh please",
+      "id": "b0f62ca4-d376-4626-9ee7-8ff564b83cca"
     },
     {
-      "title": "more notes",
+      "title": "more hope",
+      "text": "yes?",
+      "id": "455bb551-9d68-4d6b-84dc-d89392cca875"
+    },
+    {
+      "title": "another try",
       "text": "yup",
-      "id": "ffb3002b-5b17-4b55-8ba8-af1057f498d8"
-    },
-    {
-      "title": "another yet again",
-      "text": "jkl",
-      "id": "0c7ff9c4-1825-4733-8f64-45f30424e8e5"
+      "id": "9ccf6b6c-13d5-4999-b992-5b84a2a68bbf"
     },
     {
       "title": "hello",
-      "text": "yo",
-      "id": "e9997743-2ca0-42aa-9c82-7eb420d3a330"
-    },
-    {
-      "title": "plus one",
-      "text": "1",
-      "id": "de783256-9365-4ed9-953f-dc8284810d29"
-    },
-    {
-      "title": "no yo",
-      "text": "yo",
-      "id": "20285e6e-9671-4670-bb61-cb701ffd3e32"
+      "text": "wheteves",
+      "id": "aa94cae4-5fb6-47c9-8143-f7f05691e5a8"
     }
   ]
 }

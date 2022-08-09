@@ -1,30 +1,56 @@
 const router = require('express').Router();
 const crypto = require('crypto');
+const fs = require("fs");
+const path = require('path');
 
-const { createNewNote, deleteNote2, renderNotes, validateNote } = require('../../lib/notes');
-const { notes } = require('../../api/notes');
+//const { notes } = require('../../api/notes');
 
 // get all notes from the file
 router.get('/notes', (req, res) => {
-  let { notes } = renderNotes();
-  return res.json(notes);
+
+  var variable = JSON.parse(fs.readFileSync(
+    path.join(__dirname, '../../api/notes.json')
+  ));
+
+  return res.json(variable.notes);
 });
 
-router.delete("/notes/:id", function (req, res) {
-
-  return deleteNote2(req.params.id, notes);
+router.delete("/notes/:id", async function (req, res) {
+  var variable = JSON.parse(fs.readFileSync(
+    path.join(__dirname, '../../api/notes.json')
+  ));
+  const newData= await deleteSingleNote();
+  async function deleteSingleNote() {
+    // Filters out the deleted note from notesArray
+    const newNotesArray = variable.notes.filter(note => note.id != req.params.id);
+    fs.writeFileSync(
+      path.join(__dirname, '../../api/notes.json'),
+      JSON.stringify({ notes: newNotesArray }, null, 2)
+    );
+    return newNotesArray;
+  }
+// Returns array without deleted item
+res.json(newData)
 });
 
 router.post('/notes', (req, res) => {
-  // set id based on what the next index of the array will be
+  // create a random index ID
   req.body.id = crypto.randomUUID();
 
-  // if any data in req.body is incorrect, send 400 error back
-  if (!validateNote(req.body)) {
-    res.status(400).send('The note is not properly formatted.');
-  } else {
-    const note = createNewNote(req.body, notes);
-    res.json(note);
+  var variable = JSON.parse(fs.readFileSync(
+    path.join(__dirname, '../../api/notes.json')
+  ));
+  const note = createNewNote(req.body, variable.notes);
+  res.json(note);
+  
+  function createNewNote(body, notesArray) {
+    const note = body;
+    notesArray.push(note);
+    fs.writeFileSync(
+      path.join(__dirname, '../../api/notes.json'),
+      JSON.stringify({ notes: notesArray }, null, 2)
+    );
+    return note;
   }
 });
 
