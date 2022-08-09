@@ -16,11 +16,19 @@ Lets a user type in and delete notes.
 
 ## Installation
 
-Clone this repository and run index.js from the command line
+1. Clone the repo
+ - git clone git@github.com:jenniferbyrnes/note-taker.git
+3. Install NPM packages
+ - npm install
+3. Install NPM Express package
+ - npm install express
+4. Initiate application
+ - npm start
+
 
 ## Usage
 
-Run index.js from the command line
+This project can be used by individuals to add and retrieve notes data from a JSON file.
 
 ## License
 
@@ -32,7 +40,7 @@ Fork the repository and do a pull request for your code to be reviewed.
 
 ## Tests
 
-Run "npm run test" from the command line in the __tests__ directory to test object classes.
+From the __tests__ directory: npm run test 
 
 ## Questions?
 
