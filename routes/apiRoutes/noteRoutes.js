@@ -2,7 +2,6 @@ const router = require('express').Router();
 const crypto = require('crypto');
 const fs = require("fs");
 const path = require('path');
-
 //const { notes } = require('../../api/notes');
 
 // get all notes from the file
@@ -16,6 +15,7 @@ router.get('/notes', (req, res) => {
 });
 
 router.delete("/notes/:id", async function (req, res) {
+
   var variable = JSON.parse(fs.readFileSync(
     path.join(__dirname, '../../api/notes.json')
   ));
