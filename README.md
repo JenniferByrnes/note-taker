@@ -4,6 +4,8 @@
 
 Lets a user type in and delete notes.
 
+Deployed App: https://afternoon-cove-54535.herokuapp.com/
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -13,6 +15,7 @@ Lets a user type in and delete notes.
 - [How to Contribute](#How-to-Contribute)
 - [Tests](#Tests)
 - [Questions?](#Questions)
+- [ScreenShot](#ScreenShot)
 
 ## Installation
 
@@ -40,12 +43,18 @@ Fork the repository and do a pull request for your code to be reviewed.
 
 ## Tests
 
-From the __tests__ directory: npm run test 
+None 
 
 ## Questions?
 
 GitHub profile: https://github.com/jenniferbyrnes
 
 Please address any questions to me at jennifer.byrnes@outlook.com
+
+## ScreenShot
+
+[Note Taker Opening Screen](images/ScreenShot1.png)
+[Note Taker Main Screen](images/ScreenShot2.png)
+
   
   
