@@ -53,8 +53,8 @@ Please address any questions to me at jennifer.byrnes@outlook.com
 
 ## ScreenShot
 
-[Note Taker Opening Screen](images/ScreenShot1.png)
-[Note Taker Main Screen](images/ScreenShot2.png)
+![Note Taker Opening Screen](images/ScreenShot1.png)
+![Note Taker Main Screen](images/ScreenShot2.png)
 
   
   
