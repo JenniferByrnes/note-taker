@@ -44,18 +44,15 @@ router.post('/notes', (req, res) => {
   var variable = JSON.parse(fs.readFileSync(
     path.join(__dirname, '../../api/notes.json')
   ));
-  const note = createNewNote(req.body, variable.notes);
-  res.json(note);
+  
   // Push the new note into the array and save it
-  function createNewNote(body, notesArray) {
-    const note = body;
-    notesArray.push(note);
-    fs.writeFileSync(
-      path.join(__dirname, '../../api/notes.json'),
-      JSON.stringify({ notes: notesArray }, null, 2)
-    );
-    return note;
-  }
+  const note = req.body;
+  variable.notes.push(note);
+  fs.writeFileSync(
+    path.join(__dirname, '../../api/notes.json'),
+    JSON.stringify({ notes: variable.notes }, null, 2)
+  );
+  res.json(note);
 });
 
 module.exports = router;
