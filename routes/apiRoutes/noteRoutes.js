@@ -3,15 +3,13 @@ const crypto = require('crypto');
 const fs = require("fs");
 const path = require('path');
 
-
 // get all notes from the file
 router.get('/notes', (req, res) => {
 
   var variable = JSON.parse(fs.readFileSync(
     path.join(__dirname, '../../api/notes.json')
   ));
-
-  return res.json(variable.notes);
+  res.json(variable.notes);
 });
 
 router.delete("/notes/:id", async function (req, res) {
