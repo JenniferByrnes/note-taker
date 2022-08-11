@@ -20,8 +20,6 @@ router.delete("/notes/:id", async function (req, res) {
   var variable = JSON.parse(fs.readFileSync(
     path.join(__dirname, '../../api/notes.json')
   ));
-  const newData= await deleteSingleNote();
-  async function deleteSingleNote() {
     // Filters out the deleted note from notesArray
     const newNotesArray = variable.notes.filter(note => note.id != req.params.id);
     // Save the filtered array
@@ -29,10 +27,8 @@ router.delete("/notes/:id", async function (req, res) {
       path.join(__dirname, '../../api/notes.json'),
       JSON.stringify({ notes: newNotesArray }, null, 2)
     );
-    return newNotesArray;
-  }
 // Returns array without deleted item
-res.json(newData)
+res.json(newNotesArray)
 });
 
 // Add a new note ROUTE
