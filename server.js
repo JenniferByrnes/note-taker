@@ -9,9 +9,9 @@ const PORT = process.env.PORT || 3003;
 const app = express();
 
 // Connects our CSS and JavaScript files
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
