@@ -4,7 +4,7 @@ const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 // Set port to be assigned or default to 3001
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3001;
 // Instantiate the server
 const app = express();
 
