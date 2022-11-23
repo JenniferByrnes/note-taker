@@ -32,15 +32,19 @@ res.json(newNotesArray)
 // Add a new note ROUTE
 router.post('/notes', (req, res) => {
   // create a random index ID
-  req.body.id = crypto.randomUUID();
+  let id = crypto.randomUUID();
 
   // Get a fresh READ from the table
-  var variable = JSON.parse(fs.readFileSync(
+  let variable = JSON.parse(fs.readFileSync(
     path.join(__dirname, '../../api/notes.json')
   ));
   
   // Push the new note into the array and save it
-  const note = req.body;
+  const note = {
+    title: req.body.title,
+    text: req.body.text,
+    id: id
+  };
   variable.notes.push(note);
   fs.writeFileSync(
     path.join(__dirname, '../../api/notes.json'),
